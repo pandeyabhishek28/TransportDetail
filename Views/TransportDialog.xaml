@@ -1,0 +1,27 @@
+﻿<Window x:Class="TransportDetail.Views.TransportDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransportDetail.Views"
+        mc:Ignorable="d"
+        Title="TransportDialog" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Label Content="Transport ID"></Label>
+                <TextBox x:Name="_transportID"></TextBox>
+                <Label Content="Transport Date"></Label>
+                <DatePicker x:Name="_transportDate"></DatePicker>
+                <Label Content="Transport Company"></Label>
+                <ComboBox x:Name="_transportCompany"></ComboBox>
+                <Label Content="Shipper Company"></Label>
+                <ComboBox x:Name="_transportShipperCompany"></ComboBox>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="_okAction" Content="OK"></Button>
+                <Button x:Name="_cancleAction" Content="Cancle"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

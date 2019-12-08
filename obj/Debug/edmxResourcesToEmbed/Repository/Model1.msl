@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShipVioModelStoreContainer" CdmEntityContainer="ShipVioEntities">
+    <EntitySetMapping Name="companies">
+      <EntityTypeMapping TypeName="ShipVioModel.company">
+        <MappingFragment StoreEntitySet="companies">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transports">
+      <EntityTypeMapping TypeName="ShipVioModel.transport">
+        <MappingFragment StoreEntitySet="transports">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="transport_date" ColumnName="transport_date" />
+          <ScalarProperty Name="transport_company_id" ColumnName="transport_company_id" />
+          <ScalarProperty Name="shipper_company_id" ColumnName="shipper_company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
